@@ -1,0 +1,1 @@
+﻿Invoke-Command -ComputerName w12rczcls12 -ScriptBlock {get-clusterResource "Lanza Aplicaciones"}

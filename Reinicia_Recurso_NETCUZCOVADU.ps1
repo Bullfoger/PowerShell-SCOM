@@ -1,0 +1,1 @@
+﻿Invoke-Command -ComputerName w12rczcls12 -ScriptBlock {stop-ClusterResource -Name "NETCUZCOVADU Aduanas Generic Application Bandeja"; Get-Process -Name java | Where-Object -FilterScript {$_.Responding -eq $true} | Stop-Process -Confirm; start-sleep -s 10 ; start-ClusterResource -Name "NETCUZCOVADU Aduanas Generic Application Bandeja" }
